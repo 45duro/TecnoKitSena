@@ -1,0 +1,39 @@
+#include <Servo.h>
+
+Servo servos[13];
+
+/***   Global variables   ***/
+
+/***   Function declaration   ***/
+
+void setup()
+{
+
+
+  servos[9].attach(9);
+
+  servos[8].attach(8);
+
+  servos[7].attach(7);
+
+}
+
+
+void loop()
+{
+    servos[9].write(50);
+    delay(1000);
+    servos[8].write(100);
+    delay(1000);
+    servos[7].write(110);
+    delay(3000);
+    servos[9].write(5);
+    delay(1000);
+    servos[8].write(150);
+    delay(3000);
+    servos[7].write(70);
+    delay(3000);
+
+}
+
+/***   Function definition   ***/
